@@ -1,0 +1,18 @@
+python train.py  ^
+    --logtostderr  ^
+	--num_clones=1 ^
+    --training_number_of_steps=300000  ^
+    --train_split="train"  ^
+    --model_variant="xception_65"  ^
+    --atrous_rates=6  ^
+    --atrous_rates=12  ^
+    --atrous_rates=18  ^
+    --output_stride=16  ^
+    --decoder_output_stride=4  ^
+    --train_crop_size="400,660"  ^
+    --train_batch_size=2 ^
+    --fine_tune_batch_norm=True ^
+    --dataset="brain_seg" ^
+    --tf_initial_checkpoint=E:\software\birds_DNN\deeplabv3_pascal_trainval_2018_01_04\deeplabv3_pascal_trainval\model.ckpt ^
+    --train_logdir=E:\software\birds_DNN\log ^
+    --dataset_dir=I:\birds\genrate_training_data\out\tfrecord

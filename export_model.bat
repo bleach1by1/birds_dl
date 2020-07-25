@@ -1,0 +1,14 @@
+python export_model.py ^
+  --logtostderr ^
+  --checkpoint_path=E:\software\birds_DNN\log\model.ckpt-2075 ^
+  --export_path=E:\software\birds_DNN\out1.pd ^
+  --model_variant="xception_65" ^
+  --atrous_rates=6 ^
+  --atrous_rates=12 ^
+  --atrous_rates=18 ^
+  --output_stride=16 ^
+  --decoder_output_stride=4 ^
+  --num_classes=23 ^
+  --crop_size=400 ^
+  --crop_size=660 ^
+  --inference_scales=1.0
